@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
 import os
 import csv
 import pandas as pd
@@ -16,18 +13,10 @@ budgetdata = os.path.join("budget_data.csv")
 budget_df = pd.read_csv(budgetdata)
 budget_df = pd.read_csv("budget_data.csv", encoding="utf-8")
 
-
-# In[3]:
-
-
 #create work dataframe
 budget_data = budget_df[["Date", "Profit/Losses"]]
 
 budget_data["Avg Changes"] = budget_data["Profit/Losses"].diff()
-
-
-# In[4]:
-
 
 #Total months
 months = budget_data['Date'].count()
@@ -43,10 +32,6 @@ increase = budget_data["Avg Changes"].max()
 #Greatest decrease
 decrease = budget_data["Avg Changes"].min()
 
-
-# In[7]:
-
-
 print("Financial Analysis")
 print("------------------")
 print(f"Total Months: {(months)}")
@@ -55,10 +40,4 @@ print(f"Average Change: {(avgchg)}")
 print(f"Greatest Increase in Profits: {(increase)}" )
 print(f"Greatest Decrease in Profits: {(decrease)}")
 print(f"------------------")
-
-
-# In[ ]:
-
-
-
 
