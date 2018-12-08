@@ -32,12 +32,7 @@ increase = budget_data["Avg Changes"].max()
 #Greatest decrease
 decrease = budget_data["Avg Changes"].min()
 
-print("Financial Analysis")
-print("------------------")
-print(f"Total Months: {(months)}")
-print(f"Total: {(total)}")
-print(f"Average Change: {(avgchg)}")
-print(f"Greatest Increase in Profits: {(increase)}" )
-print(f"Greatest Decrease in Profits: {(decrease)}")
-print(f"------------------")
-
+print((f"Financial Analysis\n---------------------\nTotal Months: {(months)}\nTotal: {(total)}\nAverage Change: {(avgchg)}\nGreatest Increase in Profits: {(increase)}\nGreatest Decrease in Profits: {(decrease)}\n---------------------") )
+f = open('PyBank.txt','w')
+f.write(f"Financial Analysis\n---------------------\nTotal Months: {(months)}\nTotal: {(total)}\nAverage Change: {(avgchg)}\nGreatest Increase in Profits: {(increase)}\nGreatest Decrease in Profits: {(decrease)}\n---------------------")  
+f.close()
