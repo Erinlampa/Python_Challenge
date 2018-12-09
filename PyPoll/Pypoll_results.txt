@@ -1,0 +1,24 @@
+The election results are in!!
+
+The candidates are as follows:['Khan' 'Correy' 'Li' "O'Tooley"]
+
+The toal votes cast were a whopping 3521001
+
+Here is the breakdown of the votes per candidate:
+Khan        2218231
+Correy       704200
+Li           492940
+O'Tooley     105630
+Name: Candidate, dtype: int64
+
+The voters have spoken! Here is the percentage breakdown for the candidates
+Khan        63.000011
+Correy      19.999994
+Li          13.999996
+O'Tooley     2.999999
+Name: Candidate, dtype: float64
+
+AND THE WINNER IS....
+
+Khan    2218231
+Name: Candidate, dtype: int64
