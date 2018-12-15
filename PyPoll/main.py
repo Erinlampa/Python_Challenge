@@ -3,7 +3,7 @@
 
 import os
 import csv
-import papyndas as pd
+import pandas as pd
 import numpy as np
 
 # Path to collect data file
