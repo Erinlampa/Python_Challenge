@@ -24,7 +24,7 @@ total_votes = str(data_df["Voter ID"].count())
 
 #The total number of votes each candidate won
 totals= str(data_df["Candidate"].count())
-percent = str(data_df["Candidate"].value_counts()/data_df["Candidate"].count() * 100)
+percent = str(round(data_df["Candidate"].value_counts()/data_df["Candidate"].count() * 100))
 counts = str(data_df["Candidate"].value_counts())
 
 #The winner of the election based on popular vote
